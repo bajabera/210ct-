@@ -1,0 +1,24 @@
+def max_sequence():
+    '''Takes a list and returns the sub-sequence of maximum
+    length in ascending order
+    Only returns the sub-sequence
+    '''
+    list1=[1,2,3,4,3,4,5,7,8,1,9,10,11,12,13,14,15,1,2,3,4]
+    list2=[]#empty list
+     count=1#counter
+    for i in range(len(list1)-1):
+        if list1[i] < list1[i+1]:
+            count=count+1#increment counter when the number you are looking at in the list is less than the number ahead of it
+        else:
+            list2.append(count)#if number is not greater than the number ahead of it, append the size of that list
+            count=1#reset the counter
+    
+    list2.append(count)#appends again because the for loop won't take into account the last group of ascending numbers
+    index_num=list2.index(max(list2))#index's the maximum number from list2. i.e. the greatest length of numbers in ascending order
+    total=0
+    for i in range(index_num):
+        total=total+list2[i]#adds all the numbers before the indexed number in list 2 to get a starting point to extract the numbers from list1    
+
+    print((list1)[total:total+max(list2)])#prints from the total number to the maximum of list2 which is the number of elements in ascending order
+max_sequence()
+
