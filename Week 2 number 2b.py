@@ -4,6 +4,6 @@ if number<5:#(1)
 else:#(1)
     while number>5:#(n)
         number=number//5#(n)
-        print (number)#(1)
-#1+1+1+1+n+n+1=2n+5
+        print (number)#(n)
+#1+1+1+1+n+n+n=3n+4
 #O(n)
