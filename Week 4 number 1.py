@@ -1,43 +1,32 @@
-def binary_search(value):
-    '''
-    Function that takes in one value to search for in a list
+BINARY_SEARCH(value):
+    size<-take in input for size of list
+    numbers<-empty list to be searched through later
+    range1<-start point of range
+    range2<-end point of range
+    r<-range from value of range1 to value of range2
 
-    Returns whether value was found and whether or not value was within a specific interval
-    '''
-    size=int(input("How long do you want the list to be? "))#size of list
-    numbers=[]
-    range1=int(input("Starting point of range"))
-    range2=int(input("end point of range"))
-    r=range(range1,range2)
-    while len(numbers)<size:
-        ask=int(input("Please enter a list of numbers "))
-        numbers.append(ask)#to input numbers to a list
-    first=0
-    listSize=len(numbers)#calculates the size of list
-    last=listSize
+    while length(numbers)<size:
+        ask<-Take in list of numbers
+        put the numbers into the empty list called numbers
 
+    first<-0
+    listSize<-length of list numbers
+    last<-listSize
+
+    found=False
     while(first<=last):
-        mid=(first+last)//2#calculates middle part of list
+        mid<-(first+last)//2
 
-        if(value==numbers[mid]):#Checks if user value is equal to the middle value of the list
-            print("Value found")
-            
-            if value in r:#Checks if value within range
-                print("Value within range")
-                return True
-            else:
-                print("Value not in range")
-                return False
-            return True
-        
-        elif(value>numbers[mid]):#Checks if user value is greater than the middle value of the vector
-            first=mid+1#Increases the size of the first value
-        elif(value<numbers[mid]):#Checks if user value is less than the middle value of the list
-            last=mid-1#Reduces size of the last value
-        else:
-            print("Value not found")
-            return False
+        if the middle number from list numbers is in r
+            then their is a value in the range
+            found<-True
+            break the while loop
+        else if the middle number is lower than the first range1
+            first<-mid+1
+        else
+            last<-mid-1
 
-    
-binary_search(2)        
-
+    if found:
+        print('yes')
+    else:
+        print('no')
