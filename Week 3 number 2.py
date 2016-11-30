@@ -15,7 +15,7 @@ def prime(x,y):
             else:
                 prime(x,y-1)
     except ValueError:
-        print('that is nt a valid number')
+        print('that is not a valid number')
         
 prime(347,346)
 
@@ -25,7 +25,7 @@ prime(347,346)
 ##        return false
 ##    if y<2
 ##        return true
-##    else:
+##    else
 ##        if x/y has no remainders
 ##            return false
 ##        else
