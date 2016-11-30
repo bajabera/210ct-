@@ -1,4 +1,8 @@
 def perfect_square(x):
+    '''
+    takes a number as an argument and returns the highest perfect square
+    '''
+
     sqrt=x**(1/2)
     if sqrt.is_integer():
         print(x)
