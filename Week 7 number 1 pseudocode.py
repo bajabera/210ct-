@@ -20,7 +20,9 @@ class GRAPH(VERTEX):
                     if i=tail:
                         tail->i
 
-        head.ADD EDGE(tail)
+        ADD EDGE from head to tail
+        ADD EDGE from tail to head
+                        
         return None
     
 
