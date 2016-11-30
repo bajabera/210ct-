@@ -1,4 +1,8 @@
 def factorial():
+    '''
+    Takes a factorial number and counts the number of trailing zeroes
+    Returns the number of trailing zeroes
+    '''
     try:
         
         number=int(input("Please enter the factorial number you want to check for "))
