@@ -79,30 +79,41 @@ class Stack:#stack class with push, pop and length of stack
     
     
 def DFS(Graph, value):#starts at node with value, and explores a branch as far as possible before backtracking
+    f=open('DFS.txt','w')
     s=Stack()#uses stack class
     visited=[]
+    visited2=[]
     vertex=Graph.find_node(value)
     s.push(vertex)
     while len(s)>0:
         u=s.pop()
         if u not in visited:
             visited.append(u)
+            visited2.append(u.value)
             for e in u.adjacent:
                 s.push(e)
+    
+    f.write(str(visited2))
+    f.close()
     return visited
 
     
 def BFS(Graph, value):#visits all nodes starting with node and then all its children
+    f=open('BFS.txt','w')
     q=Queue()#uses queue class
     visited=[]
+    visited2=[]
     vertex=Graph.find_node(value)#gets the actual vertex object
     q.enqueue(vertex)
     while len(q)>0:
         u=q.dequeue()
         if u not in visited:
             visited.append(u)
+            visited2.append(u.value)
             for e in u.adjacent:
                 q.enqueue(e)
+    f.write(str(visited2))
+    f.close()
     return visited
     
         
