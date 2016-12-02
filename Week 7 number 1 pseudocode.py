@@ -1,11 +1,11 @@
-class VERTEX:
+CLASS VERTEX()
         value<-0
         adjacent<-[]
 
     ADD EDGE( vertex)
         Append vertex to adjacent
         
-class GRAPH(VERTEX):
+CLASS GRAPH(VERTEX)
     
         nodelist=[]
 
@@ -15,9 +15,9 @@ class GRAPH(VERTEX):
 
     ADD EDGE(head,tail)
         for every element in nodelist
-                    if  i=head:
+                    if  i=head
                         head->i
-                    if i=tail:
+                    if i=tail
                         tail->i
 
         ADD EDGE from head to tail
