@@ -142,5 +142,8 @@ if __name__ == "__main__":
     print('\nDepth first search')
     for i in l:
         print (i.value,end=" ")
+#changed to using variables because we couldn't iterate over a string for DFS and BFS, then we needed a
+#function to find the object,vertex, using the value of the variable to actually iterate over it
     
     
+
