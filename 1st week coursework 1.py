@@ -4,7 +4,7 @@ def random_shuffle():
     Takes integer inputs from user and randomizes it
     '''
     try:
-        ask1=int(input("How many numbers would you like in your list"))#input length of list
+        ask1=int(input("How many numbers would you like in your list? "))#input length of list
         max_list=ask1
         list1=[]
         while len(list1)<max_list:
