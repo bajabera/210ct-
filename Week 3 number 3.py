@@ -11,8 +11,8 @@ def remove_vowel(a):
         return x#base case
     elif x[0] in vowels:#if first element in list vowels
         return remove_vowel(x[1:])#slice first element, moves onto the next
-    
-    return x[0]+remove_vowel(x[1:])
+    else:
+        return x[0]+remove_vowel(x[1:])
 
 print(remove_vowel("Excessive work"))
 
