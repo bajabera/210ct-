@@ -12,7 +12,7 @@ def remove_vowel(a):
     elif x[0] in vowels:#if first element in list vowels
         return remove_vowel(x[1:])#slice first element, moves onto the next
     else:
-        return x[0]+remove_vowel(x[1:])
+        return x[0]+remove_vowel(x[1:])#if letter is not a vowel return it and move unto the next letter
 
 print(remove_vowel("Excessive work"))
 
