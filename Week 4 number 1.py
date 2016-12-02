@@ -22,14 +22,14 @@ def binary_search():
     while(first<=last):
         mid=(first+last)//2#calculates middle part of list
 
-        if numbers[mid] in r:
+        if numbers[mid] in r:#checks if middle number in list is in range
             found=True
-            break
+            break#break out of loop
 
         elif numbers[mid]<range1:
-            first=mid+1
+            first=mid+1#checks right half of list
         else:
-            last=mid-1
+            last=mid-1#checks left half of list
     if found:
         print("yes value within the specific interval was found")
     else:
