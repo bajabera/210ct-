@@ -24,6 +24,7 @@ print(remove_vowel("Excessive work"))
 ##REMOVE_VOWEL(x)
 ##    if not x
 ##        return x
-##    else if x[0] in vowels:
+##    else if x[0] in vowels
 ##        return REMOVE_VOWEL(x[1:])
-##    return x[0]+REMOVE_VOWEL(x[1:])
+##    else
+##        return x[0]+REMOVE_VOWEL(x[1:])
