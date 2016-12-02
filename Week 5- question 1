@@ -14,7 +14,7 @@ def max_sequence():
             list2.append(count)#if number is not greater than the number ahead of it, append the size of that list
             count=1#reset the counter
     
-    list2.append(count)#appends again because the for loop won't take into account the last group of ascending numbers
+    list2.append(count)#appends again because the for loop won't take into account the last number
     index_num=list2.index(max(list2))#index's the maximum number from list2. i.e. the greatest length of numbers in ascending order
     total=0
     for i in range(index_num):
