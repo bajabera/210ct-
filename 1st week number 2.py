@@ -13,7 +13,7 @@ def factorial():
             raise error
         else:
             while number>=5:
-                number=number//5#Keep dividing by 0 because what we are really looking for is how many times the factorial divides by 5 and the powers of 5
+                number=number//5#Keep dividing by 5 because what we are looking for is how many times the factorial divides by 5 and the powers of 5
                 print(number)
     except ValueError:
         print("That is not a valid number/character")
