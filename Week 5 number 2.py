@@ -28,7 +28,7 @@ class List(object):
             values.append(str(n.value))
             n=n.next
         print ("List: "+",".join(values))
-    def remove(self,n):
+    def remove(self,n):#allows the removal of the head/tail node
         if n.prev!=None:
             n.prev.next=n.next
         else:
@@ -37,7 +37,7 @@ class List(object):
             n.next.prev=n.prev
         else:
             self.tail=n.prev
-    def remove_again(self,value1):
+    def remove_again(self,value1):#allows the removal of a node in the middle
         node = l.head
         while node!=l.tail:
             if node.value == value1:
