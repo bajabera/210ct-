@@ -61,7 +61,7 @@ if __name__ == '__main__':
     A = [2,6,1,8,3]
     t=tree_insert(None,A[0])#inserts first value, initiates the tree
     for i in range(1,len(A)):
-        tree_insert(t,A[i])
-    in_order(t)
+        tree_insert(t,A[i])#inserts values into the tree
+    in_order(t)#orders them according to the inorder rules
 
   
