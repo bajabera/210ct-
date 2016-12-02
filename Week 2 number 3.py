@@ -1,7 +1,7 @@
 INPUT MATRIX
 m<-(Matrix as a list)#1
 n<-(Matrix as a list)#1
-p<-(product Matrix)#1
+p<-(product Matrix as a list)#1
 
 MATRIX ADDITION(m,n)
      for i 1<- to length(m)#n
